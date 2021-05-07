@@ -1,0 +1,20 @@
+'''ÖDEV 1.SORU '''
+sayı=int(input('BİR SAYI GİRİNİZ: '))
+if sayı%2==0 and sayı==0:
+    print('GİRDİĞİNİZ SAYI BİR ÇİFT SAYIDIR')
+else:
+    print('GİRDİĞİNİZ SAYI BİR TEK SAYIDIR')
+		
+		'''2.SORU(ÇÖZEMEDİM)'''
+sayı1=int(input('BİR SAYI GİRİNİZ: '))
+sayı2=int(input('BİR SAYI GİRİNİZ: '))
+sayı3=int(input('BİR SAYI GİRİNİZ: '))
+sayı4=int(input('BİR SAYI GİRİNİZ: '))
+sayı5=int(input('BİR SAYI GİRİNİZ: '))
+liste=[sayı1,sayı2,sayı3,sayı4,sayı5]
+for i in liste:
+    for n in range(1,i):
+        if i%n==0:
+             print('SAYI ASAL DEĞİL')
+        else:
+             print('sayı asal')
