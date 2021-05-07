@@ -5,7 +5,7 @@ if sayı%2==0 and sayı==0:
 else:
     print('GİRDİĞİNİZ SAYI BİR TEK SAYIDIR')
 		
-		'''2.SORU(ÇÖZEMEDİM)'''
+'''2.SORU(ÇÖZEMEDİM)'''
 sayı1=int(input('BİR SAYI GİRİNİZ: '))
 sayı2=int(input('BİR SAYI GİRİNİZ: '))
 sayı3=int(input('BİR SAYI GİRİNİZ: '))
@@ -18,3 +18,36 @@ for i in liste:
              print('SAYI ASAL DEĞİL')
         else:
              print('sayı asal')
+	     
+'''ÖDEV 3.SORU(ÇÖZEMEDİM)'''
+	     def TemizVeri():
+    ilk_string ="Ah5me4t"
+    ikinci_string = "M9eHm4eT"
+    ucuncu_string ="Ha3K5a1n"
+    _=ilk_string.lower()
+    __=ikinci_string.lower()
+    ___=ucuncu_string.lower()
+    harflistesi=['a','b','c','ç','d','e','f','g','ğ','h','ı','i','j','k','l','m','n','o','ö','p','r','s','ş','t','u','ü','v','y','z']
+    
+    for i in _:
+        if i in harflistesi:
+            a=i
+            a=a.capitalize()
+    for i in __:
+        if i in harflistesi:
+            b=i
+            b=b.capitalize()
+    for i in ___:
+        if i in harflistesi:
+            c=i
+            c=c.capitalize()
+
+
+
+    Birlesmis_deger= a +'-'+b+'-'+c
+    print(Birlesmis_deger)
+
+    return Birlesmis_deger
+
+
+TemizVeri()
