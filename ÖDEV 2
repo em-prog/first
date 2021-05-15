@@ -1,0 +1,19 @@
+''' ÖDEV 2  TASLAK:
+1_) DOSYADAKİ VERİLERİ BİR LİSTEYE AKTAR
+2_) LİSTEDEKİ VERİLERİ DÜZENLE
+3_)DÜZENLENMİŞ VERİLERİ ODEV.TXT DOSYASINDAKİ BİLGİLERLE DEĞİŞTİR '''
+
+#Dosyadaki verileri işlem kolaylığı olması açısından bir listeye aktarıyorum:
+dosya = open("odev.txt",'r+')
+yeni_dosya_bilgileri=[]
+for satır in dosya:
+    yeni_dosya_bilgileri.append(satır)
+print(yeni_dosya_bilgileri)
+
+#Listenin içindeki verileri düzenliyorum:
+import re
+patern=r'\D+'
+for kelime in yeni_dosya_bilgileri:
+    temiz_kelime=re.finditer(patern,kelime)
+print(temiz_kelime)
+    # ÖZÜR DİLERİM  BURADAN SONRASINI GETİREMEDİM ÇÖZEMEDİM SORUYU :(((
